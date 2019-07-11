@@ -27,7 +27,7 @@ public class Klass {
             leader = student;
             return;
         }
-        System.out.printf("It is not one of us\n");
+        System.out.printf("It is not one of us.\n");
     }
 
     public Student getLeader() {

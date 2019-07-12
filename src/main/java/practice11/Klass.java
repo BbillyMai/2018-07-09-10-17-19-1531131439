@@ -25,7 +25,7 @@ public class Klass {
     public void assignLeader(Student student) {
         if (student.getKlass().getNumber() == number) {
             leader = student;
-            System.out.printf("I am Tom. I know Jerry become Leader of Class "+getNumber()+".\n");
+            System.out.printf("I am Tom. I know " + student.getName() + " become Leader of Class " + getNumber() + ".\n");
             return;
         }
 
@@ -37,14 +37,14 @@ public class Klass {
     }
 
     public void appendMember(Student student) {
-        if(!isIn(student)){
-            System.out.printf("I am Tom. I know Jerry has joined Class "+getNumber()+".\n");
+        if (!isIn(student)) {
+            System.out.printf("I am Tom. I know " + student.getName() + " has joined Class " + getNumber() + ".\n");
         }
         student.getKlass().setNumber(number);
     }
 
-    public boolean isIn(Student student){
-        if(student.getKlass().getNumber()==getNumber()){
+    public boolean isIn(Student student) {
+        if (student.getKlass().getNumber() == getNumber()) {
             return true;
         }
         return false;

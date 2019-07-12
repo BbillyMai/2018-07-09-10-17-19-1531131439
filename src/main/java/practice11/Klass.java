@@ -37,9 +37,8 @@ public class Klass {
     }
 
     public void appendMember(Student student) {
-        if(isIn(student)){
-            //System.out.printf("I am Tom. I know Jerry has joined Class "+getNumber()+".\n");
-            System.out.printf("I am Tom. I know Jerry has joined Class 2.\n");
+        if(!isIn(student)){
+            System.out.printf("I am Tom. I know Jerry has joined Class "+getNumber()+".\n");
         }
         student.getKlass().setNumber(number);
     }

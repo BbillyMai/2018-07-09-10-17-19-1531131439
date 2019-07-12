@@ -167,7 +167,7 @@ public class Practice11Test {
         LinkedList<practice11.Klass> linkedList = new LinkedList<Klass>();
         linkedList.add(klass2);
         Teacher tom = new Teacher(1, "Tom", 21, linkedList);
-        Student jerry = new Student(1, "Jerry", 8, new Klass(2));
+        Student jerry = new Student(1, "Jerry", 8, new Klass(3));
 
         klass2.appendMember(jerry);
 
